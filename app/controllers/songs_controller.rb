@@ -26,7 +26,9 @@ class SongsController < ApplicationController
 
   def new
     if params[:artist_id]
-    @song = Song.new
+      @song = Song.new(artist_id: params[:artist_id])
+
+      @song = Song.new
   end
 
   def create
