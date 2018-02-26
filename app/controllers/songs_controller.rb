@@ -30,7 +30,7 @@ class SongsController < ApplicationController
         @song = Song.new(artist_id: params[:artist_id])
       else
         redirect_to artists_path
-
+      end
     else
       @song = Song.new
     end
